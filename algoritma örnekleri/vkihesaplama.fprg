@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="90536"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-01-25 12:44:41 &#214;S"/>
+        <attribute name="created" value="OTA1MzY7TEFQVE9QLUlCNDlQNkZSOzIwMjItMDEtMjU7MTI6MzM6NTcgw5ZTOzI3MjU="/>
+        <attribute name="edited" value="OTA1MzY7TEFQVE9QLUlCNDlQNkZSOzIwMjItMDEtMjU7MTI6NDQ6NDEgw5ZTOzE7MjgyOA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="vki, boy, kg" type="Integer" array="False" size=""/>
+            <output expression="&quot;boy:&quot;" newline="True"/>
+            <input variable="boy"/>
+            <output expression="&quot;kilo:&quot;" newline="True"/>
+            <input variable="kg"/>
+            <assign variable="vki" expression="kg/(boy*boy)"/>
+            <if expression="vki&lt;18.5">
+                <then>
+                    <output expression="&quot;zay&#305;f&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="vki&gt;=18.5 &amp;&amp; vki&lt;=24.9">
+                        <then>
+                            <output expression="&quot;sa&#287;l&#305;kl&#305;&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="vki&gt;=25">
+                                <then>
+                                    <output expression="&quot;kilolu&quot;" newline="True"/>
+                                </then>
+                                <else/>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

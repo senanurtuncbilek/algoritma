@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="90536"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-01-25 12:16:54 &#214;S"/>
+        <attribute name="created" value="OTA1MzY7TEFQVE9QLUlCNDlQNkZSOzIwMjItMDEtMjU7MTI6MTM6NDEgw5ZTOzI3MTY="/>
+        <attribute name="edited" value="OTA1MzY7TEFQVE9QLUlCNDlQNkZSOzIwMjItMDEtMjU7MTI6MTY6NTQgw5ZTOzE7MjgzMQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="r, alan" type="Integer" array="False" size=""/>
+            <output expression="&quot;yar&#305;&#231;ap&#305; gir&quot;" newline="True"/>
+            <input variable="r"/>
+            <assign variable="alan" expression="3.14*r*r"/>
+            <output expression="&quot;alan&quot; &amp;alan" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

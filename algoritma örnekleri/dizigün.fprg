@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="90536"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-01-26 11:59:59 &#214;&#214;"/>
+        <attribute name="created" value="OTA1MzY7TEFQVE9QLUlCNDlQNkZSOzIwMjItMDEtMjY7MTE6NTQ6MDUgw5bDljsyODUy"/>
+        <attribute name="edited" value="OTA1MzY7TEFQVE9QLUlCNDlQNkZSOzIwMjItMDEtMjY7MTE6NTk6NTkgw5bDljsxOzI5NzQ="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="sayac" type="Integer" array="False" size=""/>
+            <declare name="gunler" type="String" array="True" size="7"/>
+            <assign variable="gunler[0]" expression="&quot;pazartesi&quot;"/>
+            <assign variable="gunler[1]" expression="&quot;sal&#305;&quot;"/>
+            <assign variable="gunler[2]" expression="&quot;&#231;ar&#351;amba&quot;"/>
+            <assign variable="gunler[3]" expression="&quot;per&#351;embe&quot;"/>
+            <assign variable="gunler[4]" expression="&quot;cuma&quot;"/>
+            <assign variable="gunler[5]" expression="&quot;cumartesi&quot;"/>
+            <assign variable="gunler[6]" expression="&quot;pazar&quot;"/>
+            <for variable="sayac" start="0" end="6" direction="inc" step="1">
+                <output expression="gunler[sayac]" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

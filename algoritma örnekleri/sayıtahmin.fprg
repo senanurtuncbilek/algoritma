@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="90536"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-01-26 12:47:05 &#214;S"/>
+        <attribute name="created" value="OTA1MzY7TEFQVE9QLUlCNDlQNkZSOzIwMjItMDEtMjY7MTI6MzY6NDcgw5ZTOzI3Mjg="/>
+        <attribute name="edited" value="OTA1MzY7TEFQVE9QLUlCNDlQNkZSOzIwMjItMDEtMjY7MTI6NDc6MDUgw5ZTOzE7MjgzMg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="rastgele, sayi, denemeSayisi, tahminEdildiMi" type="Integer" array="False" size=""/>
+            <assign variable="tahminEdildiMi" expression="0"/>
+            <assign variable="denemeSayisi" expression="0"/>
+            <assign variable="rastgele" expression="random(100)+1"/>
+            <output expression="rastgele" newline="True"/>
+            <while expression="denemeSayisi&lt;10 &amp;&amp; tahminEdildiMi==0">
+                <output expression="&quot;bir say&#305; giriniz:&quot;" newline="True"/>
+                <input variable="sayi"/>
+                <if expression="sayi==rastgele">
+                    <then>
+                        <output expression="&quot;tebrikler,bildiniz&quot;" newline="True"/>
+                        <assign variable="tahminEdildiMi" expression="1"/>
+                    </then>
+                    <else>
+                        <if expression="sayi&gt;rastgele">
+                            <then>
+                                <output expression="&quot;say&#305;y&#305; k&#252;&#231;&#252;lt&quot;" newline="True"/>
+                            </then>
+                            <else>
+                                <output expression="&quot;say&#305;y&#305; y&#252;kselt&quot;" newline="True"/>
+                            </else>
+                        </if>
+                    </else>
+                </if>
+                <assign variable="denemeSayisi" expression="denemeSayisi+1"/>
+            </while>
+            <if expression="tahminEdildiMi==0">
+                <then>
+                    <output expression="&quot;&#252;zg&#252;n&#252;m,bilemediniz.tuttu&#287;umsay&#305;:&quot; &amp;rastgele" newline="True"/>
+                </then>
+                <else/>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

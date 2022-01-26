@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="90536"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-01-25 12:33:47 &#214;S"/>
+        <attribute name="created" value="OTA1MzY7TEFQVE9QLUlCNDlQNkZSOzIwMjItMDEtMjU7MTI6MjI6NDYgw5ZTOzI3MjE="/>
+        <attribute name="edited" value="OTA1MzY7TEFQVE9QLUlCNDlQNkZSOzIwMjItMDEtMjU7MTI6MzM6NDcgw5ZTOzE7MjgzMg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="yas" type="Integer" array="False" size=""/>
+            <declare name="universiteMezunu, surucuBelgesi" type="String" array="False" size=""/>
+            <output expression="&quot;ya&#351;&#305;n&#305;z&#305; giriniz:&quot;" newline="True"/>
+            <input variable="yas"/>
+            <if expression="yas&gt;40">
+                <then>
+                    <output expression="&quot;i&#351;e al&#305;nmad&#305;n&#305;z&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;&#252;niversite mezunucmusunuz? E/H&quot;" newline="True"/>
+                    <input variable="universiteMezunu"/>
+                    <output expression="&quot;s&#252;r&#252;c&#252; belgeniz var m&#305;? E/H&quot;" newline="True"/>
+                    <input variable="surucuBelgesi"/>
+                    <if expression="surucuBelgesi==&quot;E&quot; &amp;&amp;&#13;&#10;universiteMezunu==&quot;E&quot;">
+                        <then>
+                            <output expression="&quot;i&#351;e al&#305;nd&#305;n&#305;z&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;i&#351;e al&#305;nmad&#305;n&#305;z&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

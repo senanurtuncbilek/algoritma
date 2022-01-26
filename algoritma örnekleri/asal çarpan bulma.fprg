@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="90536"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-01-26 11:22:56 &#214;&#214;"/>
+        <attribute name="created" value="OTA1MzY7TEFQVE9QLUlCNDlQNkZSOzIwMjItMDEtMjY7MTE6MTM6MDAgw5bDljsyODQy"/>
+        <attribute name="edited" value="OTA1MzY7TEFQVE9QLUlCNDlQNkZSOzIwMjItMDEtMjY7MTE6MjI6NTYgw5bDljsxOzI5NjE="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="sayi, bolen" type="Integer" array="False" size=""/>
+            <output expression="&quot;asal &#231;arpanlar&#305;n&#305; bulmak istedi&#287;iniz say&#305;y&#305; girin:&quot;" newline="True"/>
+            <assign variable="bolen" expression="2"/>
+            <input variable="sayi"/>
+            <while expression="sayi&gt;1">
+                <if expression="sayi%bolen==0">
+                    <then>
+                        <assign variable="sayi" expression="sayi/bolen"/>
+                        <output expression="bolen" newline="True"/>
+                    </then>
+                    <else>
+                        <assign variable="bolen" expression="bolen+1"/>
+                    </else>
+                </if>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

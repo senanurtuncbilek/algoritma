@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="90536"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-01-25 12:54:57 &#214;S"/>
+        <attribute name="created" value="OTA1MzY7TEFQVE9QLUlCNDlQNkZSOzIwMjItMDEtMjU7MTI6NDk6MzIgw5ZTOzI3MjU="/>
+        <attribute name="edited" value="OTA1MzY7TEFQVE9QLUlCNDlQNkZSOzIwMjItMDEtMjU7MTI6NTQ6NTcgw5ZTOzE7MjgzNg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="vize, final, ortalama" type="Integer" array="False" size=""/>
+            <output expression="&quot;vize:&quot;" newline="True"/>
+            <input variable="vize"/>
+            <output expression="&quot;final:&quot;" newline="True"/>
+            <input variable="final"/>
+            <assign variable="ortalama" expression="vize*30/100+final*70/100"/>
+            <if expression="ortalama&gt;50 &amp;&amp; final&gt;50">
+                <then>
+                    <output expression="&quot;GE&#199;T&#304;&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;KALDI&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
